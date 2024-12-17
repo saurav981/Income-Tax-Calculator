@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  /* 
+  {`${theme ? "dark-theme" : "light-theme"}`} 
+  */
+
+  .dark-theme {
+    @apply bg-black/80 text-white;
+  }
+
+  .light-theme {
+    @apply bg-white/90 text-black/90;
+  }
+}
